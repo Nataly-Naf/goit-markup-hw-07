@@ -1240,14 +1240,17 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer-contant {
+  .footer-section {
     padding-left: 156px;
+    padding-right: 159px;
+  }
+  .footer-contant {
     display: flex;
     flex-wrap: wrap;
     row-gap: 112px;
     column-gap: 24px;
     align-items: normal;
-    justify-content: left;
+    justify-content: space-between;
   }
   .subscribe-msg {
     position: static;
@@ -1276,6 +1279,9 @@ body {
   }
   .social-media-text {
     text-align: left;
+  }
+  .footer-contant {
+    padding: 0;
   }
 }
 /* .social-media {
