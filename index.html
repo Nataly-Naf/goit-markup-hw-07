@@ -152,7 +152,7 @@
                 </svg>
               </div>
 
-              <h3 class="title-description">Strategy</h3>
+              <h3 class="title-description value">Strategy</h3>
               <p class="text-description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -164,7 +164,7 @@
                   <use href="./images/icons.svg#icon-clock1"></use>
                 </svg>
               </div>
-              <h3 class="title-description">Punctuality</h3>
+              <h3 class="title-description value">Punctuality</h3>
               <p class="text-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -176,7 +176,7 @@
                   <use href="./images/icons.svg#icon-diagram1"></use>
                 </svg>
               </div>
-              <h3 class="title-description">Diligence</h3>
+              <h3 class="title-description value">Diligence</h3>
               <p class="text-description">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -188,7 +188,7 @@
                   <use href="./images/icons.svg#icon-astronaut1"></use>
                 </svg>
               </div>
-              <h3 class="title-description">Technologies</h3>
+              <h3 class="title-description value">Technologies</h3>
               <p class="text-description">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -223,15 +223,20 @@
           </ul>
         </div>
       </section>
-      <section class="our-team section">
+      <section class="our-team-section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
 
           <ul class="list our-team-cont">
             <li class="our-team-list">
               <img
+                srcset="
+                  ./images/employees/img-gerrero.jpg    1x,
+                  ./images/employees/img-gerrero@2x.jpg 2x
+                "
                 src="./images/employees/markguerrero.jpg"
-                alt="Photo Mark Guerrero"
+                alt="Photo Mark
+              Guerrero"
                 width="264"
               />
               <div class="employee-card-descr">
@@ -284,7 +289,11 @@
 
             <li class="our-team-list">
               <img
-                src="./images/employees/tomford.jpg"
+                srcset="
+                  ./images/employees/img-ford.jpg    1x,
+                  ./images/employees/img-ford@2x.jpg 2x
+                "
+                src="./images/employees/img-ford.jpg"
                 alt="Photo TomFord"
                 width="264"
               />
@@ -343,7 +352,11 @@
             </li>
             <li class="our-team-list">
               <img
-                src="./images/employees/garcia.jpg"
+                srcset="
+                  ./images/employees/img-garcia.jpg    1x,
+                  ./images/employees/img-garcia@2x.jpg 2x
+                "
+                src="./images/employees/img-garcia.jpg"
                 alt="Photo Camila Garcia"
                 width="264"
               />
@@ -402,7 +415,11 @@
             </li>
             <li class="our-team-list">
               <img
-                src="./images/employees/wilson.jpg"
+                srcset="
+                  ./images/employees/img-wilson.jpg    1x,
+                  ./images/employees/img-wilson@2x.jpg 2x
+                "
+                src="./images/employees/img-wilson.jpg"
                 alt="Photo Daniel Wilson"
                 width="264"
               />
@@ -515,7 +532,7 @@
     </main>
     -->
 
-    <!-- <footer class="footer-section">
+    <footer class="footer-section">
       <div class="container footer-contant">
         <div class="logo_footer-cont">
           <a class="logo-link link logo-footer" href="./index.html"
@@ -559,7 +576,8 @@
             </li>
           </ul>
         </div>
-        <div>
+
+        <div class="subscribe-field-wrapper">
           <p class="subscribe-msg">Subscribe</p>
           <form class="subscribe-form">
             <label for="e-mail-subcription"></label>
@@ -570,18 +588,19 @@
               name="e-mail-subcription"
               placeholder="E-mail"
             />
-            <div class="subscribe-btn-wrapper">
-              <button class="subscribe-btn" type="submit">
-                Subscribe
-                <svg class="subscribe-btn-icon" width="24" height="20">
-                  <use href="./images/icons.svg#icon-send-1"></use>
-                </svg>
-              </button>
-            </div>
           </form>
         </div>
+        <div class="subscribe-btn-wrapper">
+          <button class="subscribe-btn" type="submit">
+            Subscribe
+            <svg class="subscribe-btn-icon" width="24" height="20">
+              <use href="./images/icons.svg#icon-send-1"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-    </footer> -->
+    </footer>
+
     <!-- Modal-window -->
     <div class="backdrop is-hidden" data-modal-order>
       <div class="modal">
