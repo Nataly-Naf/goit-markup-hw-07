@@ -1138,9 +1138,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 16px;
-    /* display: flex; */
+
     justify-content: center;
-    /* width: 453px; */
+
     align-items: center;
   }
   .subscribe-msg {
@@ -1267,7 +1267,7 @@ body {
     display: flex;
     position: relative;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 
@@ -1281,6 +1281,10 @@ body {
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
+    gap: 0px;
+  }
+  .footer-text {
+    max-width: 264px;
   }
   .container {
     width: 1158px;
@@ -1297,6 +1301,7 @@ body {
   }
   .subscribe-msg {
     color: var(--color-text-light);
+    text-align: left;
     margin-bottom: 16px;
     font-size: 16px;
     font-weight: 500;
@@ -1326,6 +1331,7 @@ body {
   }
   .subscribe-btn {
     border: none;
+    margin-top: 0px;
     display: block;
     width: 165px;
     height: 40px;
