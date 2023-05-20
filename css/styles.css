@@ -44,6 +44,7 @@ body {
   font-family: var(--primary-font);
   color: var(--primary-text-color);
   background-color: var(--background-color);
+  overflow: hidden;
 }
 img {
   display: block;
@@ -468,6 +469,7 @@ img {
   }
   .modal {
     position: absolute;
+    overflow-y: scroll;
     top: calc(50%);
     left: calc(50%);
     transform: translate(-50%, -50%);
