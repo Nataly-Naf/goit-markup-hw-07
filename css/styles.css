@@ -44,6 +44,8 @@ body {
   font-family: var(--primary-font);
   color: var(--primary-text-color);
   background-color: var(--background-color);
+}
+.body.mobile-menu-open {
   overflow: hidden;
 }
 img {
