@@ -11,9 +11,6 @@
   function toggleModal() {
     refs.modal.classList.toggle("is-open");
 
-     const scrollLockMethod = is-open
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
+
   }
 })();
