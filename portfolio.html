@@ -27,32 +27,105 @@
           >
           <ul class="menu-list list">
             <li class="menu-item">
-              <a class="menu-link link" href="./index.html">Studio</a>
+              <a class="menu-link link active" href="./index.html">Studio</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link active" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="menu-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="menu-item">
               <a class="menu-link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open" data-modal-open>
+          <svg class="mobile-menu-open-icon" width="40" height="40">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
         <address class="contacts-list">
           <ul class="adress-list list">
-            <li>
+            <li class="adress-item">
               <a class="contact-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="adress-item">
               <a class="contact-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mobile-menu" data-modal>
+        <div class="mobile-menu-container">
+          <button class="mobile-menu-close" data-modal-close>
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-icon"></use>
+            </svg>
+          </button>
+          <ul class="menu-list-mobile list">
+            <li class="menu-item-mobile">
+              <a class="menu-link-mobile link active" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="menu-item-mobile">
+              <a class="menu-link-mobile link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu-item-mobile">
+              <a class="menu-link-mobile link" href="">Contacts</a>
+            </li>
+          </ul>
+          <address class="contacts-list-mobile">
+            <ul class="adress-list-mobile list">
+              <li class="adress-list-mobile-item">
+                <a class="contact-link-tel-mobile link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="adress-list-mobile-item">
+                <a
+                  class="contact-link-mail-mobile link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="social-media-icon-mobile-list list">
+            <li class="social-media-mobile-item">
+              <a class="social-media-mobile-link" href="">
+                <svg class="social-media-icon mobile" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-mobile-item">
+              <a class="social-media-mobile-link" href="">
+                <svg class="social-media-icon mobile" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-mobile-item">
+              <a class="social-media-mobile-link" href="">
+                <svg class="social-media-icon mobile" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-mobile-item">
+              <a class="social-media-mobile-link" href="">
+                <svg class="social-media-icon mobile" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -74,11 +147,27 @@
                 <div class="portfolio-thumb">
                   <img
                     class="portfolio-img"
+                    srcset="
+                      ./images/portfolio/Applicationes/applicationes-tablet-356.jpg     356w,
+                      ./images/portfolio/Applicationes/applicationes-desctop-360.jpg    360w,
+                      ./images/portfolio/Applicationes/applicationes-mobile-396.jpg     396w,
+                      ./images/portfolio/Applicationes/applicationes-tablet@2x-712.jpg  712w,
+                      ./images/portfolio/Applicationes/applicationes-desctop@2x-720.jpg 720w,
+                      ./images/portfolio/Applicationes/applicationes-mobile@2x-792.jpg  792w
+                    "
+                    sizes="(min-width:1200px) 360px, (min-width:768px) 356px, (min-width:420px) 396px, 100vw"
+                    src="./images/portfolio/Applicationes/applicationes-desctop-360.jpg"
+                    width="360"
+                    height="300"
+                    alt="Application pages"
+                  />
+                  <!-- <img
+                    class="portfolio-img"
                     src="./images/portfolio/img.jpg"
                     width="360"
                     height="300"
                     alt="Application pages"
-                  />
+                  /> -->
                   <!-- <div class="overlay"> -->
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -88,10 +177,10 @@
                   <!-- </div> -->
                 </div>
                 <div class="portfolio-descr-cont">
-                  <h2 class="title-description">
+                  <h2 class="title-description portfolio">
                     Banking App Interface Concept
                   </h2>
-                  <p class="text-description">App</p>
+                  <p class="text-description portfolio">App</p>
                 </div>
               </a>
             </li>
@@ -100,7 +189,16 @@
                 <div class="portfolio-thumb">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/img-1.jpg"
+                    srcset="
+                      ./images/portfolio/cashless-payment/img-356.jpg 356w,
+                      ./images/portfolio/cashless-payment/img-360.jpg 360w,
+                      ./images/portfolio/cashless-payment/img-396.jpg 396w,
+                      ./images/portfolio/cashless-payment/img-712.jpg 712w,
+                      ./images/portfolio/cashless-payment/img-720.jpg 720w,
+                      ./images/portfolio/cashless-payment/img-792.jpg 792w
+                    "
+                    sizes="(min-width:1200px) 360px, (min-width:768px) 356px, (min-width:420px) 396px, 100vw"
+                    src="./images/portfolio/cashless-payment/img-360.jpg"
                     width="360"
                     height="300"
                     alt="Application pages"
@@ -114,8 +212,8 @@
                   <!-- </div> -->
                 </div>
                 <div class="portfolio-descr-cont">
-                  <h2 class="title-description">Cashless Payment</h2>
-                  <p class="text-description">Marketing</p>
+                  <h2 class="title-description portfolio">Cashless Payment</h2>
+                  <p class="text-description portfolio">Marketing</p>
                 </div>
               </a>
             </li>
@@ -124,10 +222,19 @@
                 <div class="portfolio-thumb">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/img-2.jpg"
+                    srcset="
+                      ./images/portfolio/meditation/img-356.jpg 356w,
+                      ./images/portfolio/meditation/img-360.jpg 360w,
+                      ./images/portfolio/meditation/img-396.jpg 396w,
+                      ./images/portfolio/meditation/img-712.jpg 712w,
+                      ./images/portfolio/meditation/img-720.jpg 720w,
+                      ./images/portfolio/meditation/img-792.jpg 792w
+                    "
+                    sizes="(min-width:1200px) 360px, (min-width:768px) 356px, (min-width:420px) 396px, 100vw"
+                    src="./images/portfolio/meditation/img-360.jpg"
                     width="360"
                     height="300"
-                    alt="Application pages"
+                    alt="Meditation"
                   />
                   <!-- <div class="overlay"> -->
                   <p class="overlay-text">
@@ -138,8 +245,8 @@
                   <!-- </div> -->
                 </div>
                 <div class="portfolio-descr-cont">
-                  <h2 class="title-description">Meditation App</h2>
-                  <p class="text-description">App</p>
+                  <h2 class="title-description portfolio">Meditation App</h2>
+                  <p class="text-description portfolio">App</p>
                 </div>
               </a>
             </li>
@@ -148,10 +255,19 @@
                 <div class="portfolio-thumb">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/img-3.jpg"
+                    srcset="
+                      ./images/portfolio/taxi/img-356.jpg 356w,
+                      ./images/portfolio/taxi/img-360.jpg 360w,
+                      ./images/portfolio/taxi/img-396.jpg 396w,
+                      ./images/portfolio/taxi/img-712.jpg 712w,
+                      ./images/portfolio/taxi/img-720.jpg 720w,
+                      ./images/portfolio/taxi/img-792.jpg 792w
+                    "
+                    sizes="(min-width:1200px) 360px, (min-width:768px) 356px, (min-width:420px) 396px, 100vw"
+                    src="./images/portfolio/taxi/img-360.jpg"
                     width="360"
                     height="300"
-                    alt="Application pages"
+                    alt="Taxi"
                   />
                   <!-- <div class="overlay"> -->
                   <p class="overlay-text">
@@ -162,8 +278,8 @@
                   <!-- </div> -->
                 </div>
                 <div class="portfolio-descr-cont">
-                  <h2 class="title-description">Taxi Service</h2>
-                  <p class="text-description">Marketing</p>
+                  <h2 class="title-description portfolio">Taxi Service</h2>
+                  <p class="text-description portfolio">Marketing</p>
                 </div>
               </a>
             </li>
@@ -172,10 +288,19 @@
                 <div class="portfolio-thumb">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/img-4.jpg"
+                    srcset="
+                      ./images/portfolio/screen-illustrations/img-356.jpg 356w,
+                      ./images/portfolio/screen-illustrations/img-360.jpg 360w,
+                      ./images/portfolio/screen-illustrations/img-396.jpg 396w,
+                      ./images/portfolio/screen-illustrations/img-712.jpg 712w,
+                      ./images/portfolio/screen-illustrations/img-720.jpg 720w,
+                      ./images/portfolio/screen-illustrations/img-792.jpg 792w
+                    "
+                    sizes="(min-width:1200px) 360px, (min-width:768px) 356px, (min-width:420px) 396px, 100vw"
+                    src="./images/portfolio/screen-illustrations/img-360.jpg"
                     width="360"
                     height="300"
-                    alt="Application pages"
+                    alt="screen-illustrations"
                   />
                   <!-- <div class="overlay"> -->
                   <p class="overlay-text">
@@ -186,8 +311,10 @@
                   <!-- </div> -->
                 </div>
                 <div class="portfolio-descr-cont">
-                  <h2 class="title-description">Screen Illustrations</h2>
-                  <p class="text-description">Design</p>
+                  <h2 class="title-description portfolio">
+                    Screen Illustrations
+                  </h2>
+                  <p class="text-description portfolio">Design</p>
                 </div>
               </a>
             </li>
@@ -196,10 +323,19 @@
                 <div class="portfolio-thumb">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/img-5.jpg"
+                    srcset="
+                      ./images/portfolio/online-courses/img-356.jpg 356w,
+                      ./images/portfolio/online-courses/img-360.jpg 360w,
+                      ./images/portfolio/online-courses/img-396.jpg 396w,
+                      ./images/portfolio/online-courses/img-712.jpg 712w,
+                      ./images/portfolio/online-courses/img-720.jpg 720w,
+                      ./images/portfolio/online-courses/img-792.jpg 792w
+                    "
+                    sizes="(min-width:1200px) 360px, (min-width:768px) 356px, (min-width:420px) 396px, 100vw"
+                    src="./images/portfolio/online-courses/img-360.jpg"
                     width="360"
                     height="300"
-                    alt="Application pages"
+                    alt="online courses"
                   />
                   <!-- <div class="overlay"> -->
                   <p class="overlay-text">
@@ -210,8 +346,8 @@
                   <!-- </div> -->
                 </div>
                 <div class="portfolio-descr-cont">
-                  <h2 class="title-description">Online Courses</h2>
-                  <p class="text-description">Marketing</p>
+                  <h2 class="title-description portfolio">Online Courses</h2>
+                  <p class="text-description portfolio">Marketing</p>
                 </div>
               </a>
             </li>
@@ -220,10 +356,19 @@
                 <div class="portfolio-thumb">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/img-6.jpg"
+                    srcset="
+                      ./images/portfolio/instagram-stories/img-356.jpg 356w,
+                      ./images/portfolio/instagram-stories/img-360.jpg 360w,
+                      ./images/portfolio/instagram-stories/img-396.jpg 396w,
+                      ./images/portfolio/instagram-stories/img-712.jpg 712w,
+                      ./images/portfolio/instagram-stories/img-720.jpg 720w,
+                      ./images/portfolio/instagram-stories/img-792.jpg 792w
+                    "
+                    sizes="(min-width:1200px) 360px, (min-width:768px) 356px, (min-width:420px) 396px, 100vw"
+                    src="./images/portfolio/instagram-stories/img-360.jpg"
                     width="360"
                     height="300"
-                    alt="Application pages"
+                    alt="instagram stories"
                   />
                   <!-- <div class="overlay"> -->
                   <p class="overlay-text">
@@ -234,8 +379,10 @@
                   <!-- </div> -->
                 </div>
                 <div class="portfolio-descr-cont">
-                  <h2 class="title-description">Instagram Stories Concept</h2>
-                  <p class="text-description">Design</p>
+                  <h2 class="title-description portfolio">
+                    Instagram Stories Concept
+                  </h2>
+                  <p class="text-description portfolio">Design</p>
                 </div>
               </a>
             </li>
@@ -244,10 +391,19 @@
                 ><div class="portfolio-thumb">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/img-7.jpg"
+                    srcset="
+                      ./images/portfolio/organic-food/img-356.jpg 356w,
+                      ./images/portfolio/organic-food/img-360.jpg 360w,
+                      ./images/portfolio/organic-food/img-396.jpg 396w,
+                      ./images/portfolio/organic-food/img-712.jpg 712w,
+                      ./images/portfolio/organic-food/img-720.jpg 720w,
+                      ./images/portfolio/organic-food/img-792.jpg 792w
+                    "
+                    sizes="(min-width:1200px) 360px, (min-width:768px) 356px, (min-width:420px) 396px, 100vw"
+                    src="./images/portfolio/organic-food/img-360.jpg"
                     width="360"
                     height="300"
-                    alt="Application pages"
+                    alt="organic food"
                   />
                   <!-- <div class="overlay"> -->
                   <p class="overlay-text">
@@ -258,8 +414,8 @@
                   <!-- </div> -->
                 </div>
                 <div class="portfolio-descr-cont">
-                  <h2 class="title-description">Organic Food</h2>
-                  <p class="text-description">Web Site</p>
+                  <h2 class="title-description portfolio">Organic Food</h2>
+                  <p class="text-description portfolio">Web Site</p>
                 </div>
               </a>
             </li>
@@ -268,10 +424,19 @@
                 <div class="portfolio-thumb">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/img-8.jpg"
+                    srcset="
+                      ./images/portfolio/coffee/img-356.jpg 356w,
+                      ./images/portfolio/coffee/img-360.jpg 360w,
+                      ./images/portfolio/coffee/img-396.jpg 396w,
+                      ./images/portfolio/coffee/img-712.jpg 712w,
+                      ./images/portfolio/coffee/img-720.jpg 720w,
+                      ./images/portfolio/coffee/img-792.jpg 792w
+                    "
+                    sizes="(min-width:1200px) 360px, (min-width:768px) 356px, (min-width:420px) 396px, 100vw"
+                    src="./images/portfolio/coffee/img-360.jpg"
                     width="360"
                     height="300"
-                    alt="Application pages"
+                    alt="coffee"
                   />
                   <!-- <div class="overlay"> -->
                   <p class="overlay-text">
@@ -282,8 +447,8 @@
                   <!-- </div> -->
                 </div>
                 <div class="portfolio-descr-cont">
-                  <h2 class="title-description">Fresh Coffee</h2>
-                  <p class="text-description">Web Site</p>
+                  <h2 class="title-description portfolio">Fresh Coffee</h2>
+                  <p class="text-description portfolio">Web Site</p>
                 </div>
               </a>
             </li>
@@ -358,5 +523,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
